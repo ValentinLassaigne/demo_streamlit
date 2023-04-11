@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 
 # %%
-@st.cache
+@st.cache_data
 def load_data():
     bikes_data_path = Path() / 'data/bike_sharing_demand_train.csv'
     data = pd.read_csv(bikes_data_path)
